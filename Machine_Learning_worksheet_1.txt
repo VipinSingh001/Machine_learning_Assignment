@@ -1,0 +1,87 @@
+Machine Learning Worksheet 1
+
+1. C
+
+2. C
+
+3. C
+
+4. B
+
+5. C
+
+6. B
+
+7. C
+
+8. D
+
+9. A,C,D
+
+10. C
+
+11. Outlier - It’s data that lies outside the other values in the set.
+    Outliers are below Q1 – 1.5 ×IQR and above Q3 + 1.5×IQR
+    Example- Salary of CEO in a company
+    The IQR(Interquartile Range) can be used as a measure of how spread-out the values are.
+    IQR = Q3 – Q1 .
+    Q1 represents the 25th percentile of the data.
+    Q2 represents the 50th percentile of the data.
+    Q3 represents the 75th percentile of the data.
+    If a dataset has 2n / 2n+1 data points, then
+    Q1 = median of the dataset.
+    Q2 = median of n smallest data points.
+    Q3 = median of n highest data points
+
+
+12. Differences Between Bagging and Boosting –
+  a) Bagging aim to decrease variance(overfittnig), not bias while boosting aim to decrease bias, not variance.
+  b) Bagging means that you take bootstrap samples (with replacement) of your data set and each sample trains a (potentially) weak learner. Boosting, on the other      hand, uses all data to train each learner, but instances that were misclassified by the previous learners are given more weight so that subsequent learners give      more focus to them during training.
+  c) Bagging provides parallel learning while Boosting provides sequential learning of the predictors
+  d) Example of bagging Random forest while boosting example is Gradient boosting
+
+
+
+13. Adjusted R² indicates how well terms(data points) fit a curve or line, but adjusts for the number of terms in a model. If you add more and more useless variables       to a model, adjusted r-squared will decrease. If you add more useful variables, adjusted r-squared will increase.
+    Adjusted R2 will always be less than or equal to R2.
+
+    formula--
+           adj.R²  = 1 - (1 - R² ) * ((n - 1)/(n-p-1))
+           where p is no. of predictors
+                 n is the total sample size
+                 R² is sample R-square. it is also called cofficient of determination
+                 R² = Explained variation / Total Variation
+
+
+14. a) Normalization usually means to scale a variable to have a values between 0 and 1, while standardization transforms data to have a mean of zero and a standard        deviation of 1.
+
+    b) Standardization of data is when you need to do multivariate analysis on data of different units, while if your data is not normally distributed you need to do          normalization before running statistical analysis.
+
+    c) Normalizing the data is sensitive to outliers, so if there are outliers in the data set it is a bad practice. Standardization creates a new data not bounded            (unlike normalization).
+
+    d) Standardization - Z-score scaling  Normalizing - min-max normalization
+
+
+15. Cross Validation is a technique which involves reserving a particular sample of a dataset on which you do not train the model. Later, you test your model on this     sample before finalizing it.
+    
+    Here are the steps involved in cross validation:
+
+    1.  You reserve a sample data set
+    2.  Train the model using the remaining part of the dataset
+    3.  Use the reserve sample of the test (validation) set. This will help you in gauging the effectiveness of your model’s performance. If your model delivers a     4.  positive result on validation data, go ahead with the current model.
+
+    Advantage
+             
+             Hyperparameter Tuning
+
+    Disadvantage
+             Increases Training Time
+
+
+
+              
+
+
+
+
+	
